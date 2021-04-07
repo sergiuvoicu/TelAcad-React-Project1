@@ -1,38 +1,231 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+  clear: both;
+}
+.column {
+  position: sticky;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  top: 0px;
+  padding-top:2.5%;
+}
+.left{
+  padding-left: 5%;
+}
+.right{
+  padding-right: 5%;
+}
+
+.h1{
+  font-weight: normal;
+}
+
+.input{
+  display: flex;
+  position: relative;
+  height: 25px;
+  top: 30px;
+  margin: 0px;
+  margin-bottom: 5px;
+  width: 250px;
+
+ 
+}
+.cbdiv{
+  position: relative;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  top: 35px;
+  margin: 0px;
+  margin-bottom: 50px;
+  width: 80%;
 }
 
-.App-link {
-  color: #61dafb;
+.cbinput{
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.span{
+  margin-left: 10px;
 }
+
+.field-container{
+  text-align: left;
+}
+.field{
+  border: 0px;
+  outline: 0px;
+  border-bottom: 1px solid rgb(116, 116, 116) ;
+  width: 250;
+}
+.field:hover{
+  border-bottom: 1px solid rgb(35, 83, 243)
+}
+.field-addon{
+  position: relative;
+  pointer-events: none;
+  color: rgb(116, 116, 116);
+  top: -5px;
+  z-index: -1;
+  transition: 0.05s ease all;
+  text-align: left;
+}
+.input:focus::placeholder{
+  color: transparent
+}
+.input:focus ~ .field-addon{
+  top: -25px;
+  z-index: 100;
+}
+
+.submitBtn{
+
+  height: 30px;
+  width: 100px;
+  background-color: rgb(226, 226, 226);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+  border: 0px;
+  outline: 0px;
+  border-radius: 3%;
+  
+}
+.submitBtn:hover{
+  background-color: rgb(216, 216, 216);
+
+}
+
+.color-div{
+  
+  display: flex;
+  flex-flow: column;
+  margin-top: 300px;
+  
+}
+.color-div1{
+  display: flex;
+  align-items: center;
+
+}
+.color-btn{
+  -webkit-appearance: none;
+  padding: 0;
+  border: 1px solid rgb(168, 168, 168);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  
+}
+.color-btn::-webkit-color-swatch {
+
+  border-radius: 50%;
+  padding: 0;
+}
+.color-btn::-webkit-color-swatch-wrapper {
+
+  border-radius: 50%;
+  padding: 0;
+}
+.form-container{
+
+  width: 250px;
+  text-align: center;
+  
+}
+.show-buttons{
+
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 21px; 
+}
+.info-list{
+  padding: 0px;
+  padding-top: 2%;
+
+}
+.info-block{
+  display: inline-block;
+  padding-left: 10px;
+}
+.info-p{
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 5px;
+
+}
+.profile{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  
+}
+.trash-btn{
+  height: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: whitesmoke;
+  border: 1px solid rgb(194, 194, 194);
+  display: flex;
+  align-items: center;
+  
+
+}
+.trash-btn:hover{
+  background-color:rgb(216, 216, 216);
+}
+.avatar{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.icon{
+  height: 15px;
+  width: 15px;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+
+   .input{
+     width: 95%;
+   }
+   .form-container{
+     width: 95%;
+   }
+   .submitBtn{
+     width: 70px;
+     height: 35px;
+   }
+   .h1{
+     font-size: 24px;
+   }
+   .show-buttons{
+     padding-top: 16px;
+     padding-bottom: 16px;
+   }
+   .info-block{
+     padding-left: 0px;
+     justify-content: center;
+     align-items: center;
+   }
+   .info-p{
+     max-width: 180px;
+     word-break: break-all;
+ 
+   }
+   .profile{
+     flex-flow: column;
+     text-align: center;
+     
+   }
+   .trash-btn{
+    margin: auto;
+   }
+}
+
+
+
