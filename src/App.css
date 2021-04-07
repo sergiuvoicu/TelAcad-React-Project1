@@ -101,7 +101,8 @@
   
   display: flex;
   flex-flow: column;
-  margin-top: 300px;
+  margin-top: 175px;
+
   
 }
 .color-div1{
@@ -185,7 +186,32 @@
   height: 15px;
   width: 15px;
 }
-
+.link{
+  text-decoration: none;
+  font-weight: bold;
+  width: 100px;
+  text-align: center;
+  border-radius: 10%;
+  color: black;
+  margin-left: 5px;
+}
+.link:hover{
+  background-color: rgb(235, 235, 235);
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2.5%;
+  margin-top: 2.5%;
+}
+.about-p{
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 
 @media only screen and (max-width: 640px) {
@@ -223,8 +249,13 @@
      
    }
    .trash-btn{
-    margin: auto;
+     margin: auto;
    }
+   .color-div{
+     margin-top: 120px;
+   }
+
+   
 }
 
 

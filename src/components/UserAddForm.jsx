@@ -16,6 +16,7 @@ class UserAddForm extends React.Component{
     render(){
         return(
             <form className = 'form' name = 'userForm' onSubmit = { event => { 
+
                 event.preventDefault();
                 if(this.state.name === ''){
                     alert("Fill in a name");
@@ -26,8 +27,8 @@ class UserAddForm extends React.Component{
                     return null;
                 }
                 else{
+
                     this.props.submitHandler(this.state);
-                    
 
                     for( let field in this.state){
                         if( typeof(this.state[field]) === 'string'){
@@ -61,7 +62,7 @@ class UserAddForm extends React.Component{
                     <span style = {{color: this.props.fontColor}} className = 'field-addon'> Salary </span>
                 </div>
                
-                <input style = {{color: this.props.fontColor}} className = 'input' type = "file" id="image" onChange = { event => { this.setState({ image: event.target.value})}}/>
+                <input style = {{color: this.props.fontColor}} className = 'input' type = "file" id="image" onChange = { event => { this.setState({ image: event.target.files[0]})}}/>
              
                 <div className = 'cbdiv'>
                     <input className = 'cbinput' type = "checkbox" id="isGoldClient" onClick = { event => {this.setState({isGoldClient: event.target.checked})}}/>
