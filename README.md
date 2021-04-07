@@ -1,5 +1,5 @@
 # Telecom Academy React Project 1
-This is the first project developed during the JavaScript Advanced-React course.
+This is the first project developed during the Telecom Academy JavaScript Advanced-React course.
 
 ## Functionalities
 * User registration form
@@ -9,8 +9,8 @@ This is the first project developed during the JavaScript Advanced-React course.
 * The application is mobile responsive, and it was developed using all React fundamental concepts.
 
 ## How to run the project
-1. `git clone https://github.com/sergiuvoicu/TelAcad-React-Project1.git`
-2. `cd TelAcad-React-Project1`
+1. `git clone https://github.com/sergiuvoicu/telacad-react-project1.git`
+2. `cd telacad-react-project1`
 3. `npm install`
 4. `npm start`
 
